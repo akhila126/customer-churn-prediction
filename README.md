@@ -63,7 +63,13 @@ customer churn project/
   - Total Charges
 
 ---
+## 📸 Screenshots
 
+### Home Page
+![Home Page](static/screenshots/home.png)
+
+### Prediction Result
+![Result Page](static/screenshots/result.png)
 ## ⚙️ How to Run This Project
 
 ### 1. Clone the repository

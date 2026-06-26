@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Churn Prediction</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Customer Churn Prediction</h1>
+
+<form action="/predict" method="POST">
+
+<label>Gender</label>
+<select name="gender">
+<option value="0">Female</option>
+<option value="1">Male</option>
+</select>
+
+<label>Senior Citizen</label>
+<select name="SeniorCitizen">
+<option value="0">No</option>
+<option value="1">Yes</option>
+</select>
+
+<label>Partner</label>
+<select name="Partner">
+<option value="0">No</option>
+<option value="1">Yes</option>
+</select>
+
+<label>Dependents</label>
+<select name="Dependents">
+<option value="0">No</option>
+<option value="1">Yes</option>
+</select>
+
+<label>Tenure</label>
+<input type="number" name="tenure" required>
+
+<label>Monthly Charges</label>
+<input type="number" step="0.01" name="MonthlyCharges" required>
+
+<label>Total Charges</label>
+<input type="number" step="0.01" name="TotalCharges" required>
+
+<button type="submit">Predict</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
